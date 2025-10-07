@@ -119,9 +119,28 @@
       ::slotted(*:last-child) {
         margin-bottom: 0;
       }
+
+      .divImagen {
+        display: flex;
+        justify-content: right;
+        position: relative;
+
+      }
+
+      .pokeImagen {
+        position: absolute;
+        justify-content: center;
+      }
+
     </style>
+    <!--Imagen del pokemon-->
     <div class="bar"></div>
     <div id="content-wrap">
+
+      <div class="divImagen">
+        <img class="pokeImagen" src="img/2.png" alt="" width="160px" height="160px">
+      </div>
+
       <slot></slot>
     </div>
     <div class="bar"></div>
@@ -387,6 +406,10 @@
       <property-line>
         <h4>Nivel</h4>
         <p>6</p>
+      </property-line>
+      <property-line>
+        <h4>Competencia</h4>
+        <p>+3</p>
       </property-line>
     </top-stats>
 
