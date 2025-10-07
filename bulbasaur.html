@@ -119,9 +119,25 @@
       ::slotted(*:last-child) {
         margin-bottom: 0;
       }
+
+      .divImagen {
+        display: flex;
+        justify-content: right;
+        position: relative;
+
+      }
+
+      .pokeImagen {
+        position: absolute;
+        justify-content: center;
+      }
     </style>
     <div class="bar"></div>
+    <!--Imagen del pokemon-->
     <div id="content-wrap">
+      <div class="divImagen">
+        <img class="pokeImagen" src="img/1.png" alt="" width="150px" height="150px">
+      </div>
       <slot></slot>
     </div>
     <div class="bar"></div>
@@ -326,7 +342,7 @@
     <creature-heading>
       <!-- NOMBRE Y TIPO DE CRIATURA -->
       <h1>Bulbasaur</h1>
-      <h2>Tipo planta, mediano</h2>
+      <h2>Tipo planta, pequeño</h2>
     </creature-heading>
 
 
@@ -348,23 +364,28 @@
         <h4>Velocidad</h4>
         <p>30ft (6 casillas)</p>
       </property-line>
+      <property-line>
+        <h4>Competencia</h4>
+        <p>+2</p>
+      </property-line>
+
 
 
       <!-- PUNTUACIONES DE CARACTERISTICAS -->
-      <abilities-block data-cha="10" data-con="14" data-des="12" data-int="6" data-fue="14" data-sab="10">
+      <abilities-block data-fue="14" data-des="12" data-con="14" data-int="6"  data-sab="10" data-cha="10">
       </abilities-block>
 
       <!-- CARACTERISTICAS PASIVAS -->
       <property-line>
         <h4>Tiradas de salvacion</h4>
-        <p>Fortaleza +2</p>
+        <p>Fuerza</p>
       </property-line>
       <property-line>
         <h4>Recistencias</h4>
         <p>Veneno, Agua, Planta</p>
       </property-line>
       <property-line>
-        <h4>Vulnerabilidades</h4>
+        <h4>Debilidades</h4>
         <p>Fuego, Hielo, Volador, Psiquico</p>
       </property-line>
       <property-line>
@@ -402,27 +423,33 @@
 
     <property-block>
       <h4>Multiataque.</h4>
-      <p>Bulbasaur puede realizar dos ataques con una accion de ataque</p>
+      <p>Bulbasaur puede realizar 2 ataques basicos o 1 ataque especial</p>
     </property-block>
-
+    
+    <h3 style="font-size: 18px;">Ataques basicos</h3>
+    
     <property-block>
       <h4>Placaje </h4>
-      <p><i>Ataque melee +4 </i><i>Alcance :</i> Un objetivo a 5ft<br>
+      <p><i>Ataque cuerpo a cuerpo +4 a impactar </i><br> 
+        <i>Alcance:</i> Un objetivo a 5ft<br>
         <i>Hit:</i> 5 (1d6 + 2) daño contundente.
       </p>
     </property-block>
 
     <property-block>
       <h4>Latigo sepa </h4>
-      <p><i>Ataque rango +5 </i><i>Alcance :</i> Un objetivo a 15ft<br>
+      <p><i>Ataque rango +5 a impactar</i><br>
+        <i>Alcance:</i> Un objetivo a 15ft<br>
         <i>Hit:</i> 5 (1d6 + 2) daño contundente/planta.
       </p>
       <p>Creas un largo látigo cubierto de espinas, que arremete contra una criatura dentro de alcance.
         Si golpea, la criatura sufre 1d6+Fue de daño perforante, y si es del mismo o menor tamaño que el lanzador,
-        atraes el objetivo hasta 10 ft en tu dirección.
+        atraes el objetivo hasta 10 ft en tu dirección.<br>
         El daño aumenta en 1d6 al alcanzar los niveles 5 (2d6), 11 (3d6) y 17 (4d6).
       </p>
     </property-block>
+
+    <h3 style="font-size: 18px;">Ataques especiales</h3>
 
   </stat-block>
 </body>
