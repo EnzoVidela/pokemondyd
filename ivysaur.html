@@ -138,7 +138,7 @@
     <div id="content-wrap">
 
       <div class="divImagen">
-        <img class="pokeImagen" src="img/2.png" alt="" width="160px" height="160px">
+        <img class="pokeImagen" src="img/2.png" alt="" width="200px" height="200px">
       </div>
 
       <slot></slot>
@@ -368,20 +368,27 @@
         <h4>Velocidad</h4>
         <p>30 ft. (6 casillas)</p>
       </property-line>
+        <property-line>
+        <h4>Competencia</h4>
+        <p>+3</p>
+      </property-line>
+      <property-line>
+        <h4>Nivel</h4>
+        <p>6</p>
+      </property-line>
 
       <!-- PUNTUACIONES DE CARACTERISTICAS -->
-
-      <abilities-block data-cha="15" data-con="18" data-des="15" data-int="11" data-fue="20"
-        data-sab="14"></abilities-block>
+      <abilities-block data-fue="17" data-des="14" data-con="15" data-int="7" data-sab="11" data-cha="11">
+      </abilities-block>
 
       <!-- CARACTERISTICAS PASIVAS -->
       <property-line>
         <h4>Tiradas de salvacion</h4>
-        <p>Fortaleza +4</p>
+        <p>Fuerza</p>
       </property-line>
       <property-line>
         <h4>Habilidades</h4>
-        <p>Atletismo +9, Percepcion +6</p>
+        <p>Atletismo, Percepcion</p>
       </property-line>
       <property-line>
         <h4>Recistencias</h4>
@@ -403,14 +410,8 @@
         <h4>Languages</h4>
         <p>Pokemon</p>
       </property-line>
-      <property-line>
-        <h4>Nivel</h4>
-        <p>6</p>
-      </property-line>
-      <property-line>
-        <h4>Competencia</h4>
-        <p>+3</p>
-      </property-line>
+      
+      
     </top-stats>
 
     <!-- HABILIDADES -->
@@ -428,49 +429,55 @@
     <!-- Columna dos Acciones -->
 
     <h3>Acciones</h3>
-
     <property-block>
       <h4>Multiataque</h4>
-      <p>Ivysaur realiza dos ataques con una accion de ataque</p>
+      <p>Bulbasaur puede realizar 2 ataques basicos o 1 ataque especial</p>
+      <br>
+      <br>
+      <br>
     </property-block>
 
+    <!--Ataques basicos-->
+    <h3 style="font-size: 18px;">Ataques basicos</h3>
     <property-block>
       <h4>Placaje </h4>
-      <p><i>Ataque melee +4 </i><i>Alcance :</i> Un objetivo a 5ft<br>
-        <i>Hit:</i> 5 (1d6 + 2) daño contundente.
+      <p><i>Ataque cuerpo a cuerpo +6 a impactar </i><br> 
+        <i>Alcance:</i> Un objetivo a 5ft<br>
+        <i>Hit:</i> 6 (1d6 + 3) daño contundente.
+      </p>
+    </property-block>
+ <property-block>
+      <h4>Gruñido </h4>
+      <p><i>Ataque rango Salvacion sabiduria</i><br> 
+        <i>Alcance:</i> Un objetivo a 60ft<br>
+        <i>Hit:</i> Seleccionas una criatura dentro de alcance y debe realizar una tirada de salvación de Sabiduría
+          Si falla, añade -1 a cualquier ataque que realice. Al final de su turno el objetivo puede volver a realizar la tirada de salvacion
+          Este modificador se puede acumular si falla varias tiradas de salvación de Gruñido, hasta un máximo de -5.
       </p>
     </property-block>
 
-
-
-    <h3>Ataques especiales</h3>
-    <p>The werewolf can take 3 legendary actions, choosing from the
-      options below. Only one legendary action option can be used at a
-      time and only at the end of another creature's turn. The werewolf
-      regains spent legendary actions at the start of its turn.</p>
-
+    <!--Ataques especiales-->
+    <h3 style="font-size: 18px;">Ataques especiales</h3>
     <property-line>
-      <h4>Polvo venenoso</h4>
-      <p>The werewolf moves up to its speed without provoking
-        opportunity attacks.</p>
+      <h4 style="color: blueviolet;">Polvo Venenoso</h4>
+      <i>Ataque rango Salvacion constitucion</i><br> 
+      <i>Alcance:</i> Un objetivo a 10ft<br>
+      <p>Liberas un grupo de esporas venenosas que estallan en el aire sobre un objetivo dentro de alcance.
+        La criatura debe superar una tirada de Constitución o sufrir 1d12 de daño por veneno<br>
+        <i>El daño aumenta en 1d12 al alcanzar el nivel 5 (2d12), el nivel 11 (3d12) y el nivel 17 (4d12)</i></p>
     </property-line>
 
     <property-line>
-      <h4>Polvo somnifero</h4>
-      <p>The werewolf chooses a friendly creature who can
-        see or hear it. That creature can use its reaction to move up to its
-        speed without provoking opportunity attacks.</p>
-    </property-line>
-
-    <property-line>
-      <h4>Hojas navaja</h4>
-      <p>The werewolf can make one claw attack against each creature within 5
-        feet of it.</p>
+      <h4 style="color:forestgreen;">Polvo Sobnifero</h4>
+      <i>Ataque rango Salvacion constitucion</i><br>
+      <i>Alcance:</i> Un objetivo a 40ft<br>
+      <p>Liberas un grupo de esporas contra una criatura a 40ft, intentando adormecerla.
+        El objetivo debe realizar una tirada de salvación de constitucion o quedará dormido.<br>
     </property-line>
     
     <!-- IMAGEN-->
     <property-block>
-      <img src="img/2.png" alt="" width="200px" height="200px">
+      
     </property-block>
 
     

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bulbasaur</title>
   <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet"
     type="text/css" />
@@ -136,7 +137,7 @@
     <!--Imagen del pokemon-->
     <div id="content-wrap">
       <div class="divImagen">
-        <img class="pokeImagen" src="img/1.png" alt="" width="150px" height="150px">
+        <img class="pokeImagen" src="img/1.png" alt="" width="180px" height="180px">
       </div>
       <slot></slot>
     </div>
@@ -368,6 +369,10 @@
         <h4>Competencia</h4>
         <p>+2</p>
       </property-line>
+      <property-line>
+        <h4>Nivel</h4>
+        <p>1</p>
+      </property-line>
 
 
 
@@ -400,10 +405,6 @@
         <h4>Lenguajes</h4>
         <p>Pokemon</p>
       </property-line>
-      <property-line>
-        <h4>Nivel</h4>
-        <p>1</p>
-      </property-line>
     </top-stats>
 
 
@@ -420,14 +421,13 @@
 
     <!-- ACCIONES -->
     <h3>Acciones</h3>
-
     <property-block>
       <h4>Multiataque.</h4>
       <p>Bulbasaur puede realizar 2 ataques basicos o 1 ataque especial</p>
     </property-block>
     
+    <!--Ataques basicos-->
     <h3 style="font-size: 18px;">Ataques basicos</h3>
-    
     <property-block>
       <h4>Placaje </h4>
       <p><i>Ataque cuerpo a cuerpo +4 a impactar </i><br> 
@@ -436,11 +436,13 @@
       </p>
     </property-block>
 
+    <!--Ataques especiales-->
+    <h3 style="font-size: 18px;">Ataques especiales</h3>
     <property-block>
-      <h4>Latigo sepa </h4>
-      <p><i>Ataque rango +5 a impactar</i><br>
+      <h4 style="color: forestgreen;">Latigo sepa </h4>
+      <p><i>Ataque rango +4 a impactar</i><br>
         <i>Alcance:</i> Un objetivo a 15ft<br>
-        <i>Hit:</i> 5 (1d6 + 2) daño contundente/planta<br>
+        <i>Hit:</i> 5 (1d6 + 2) daño planta<br>
         Creas un látigo cubierto de espinas, que arremete contra una criatura dentro de alcance
         Si golpea, la criatura sufre 1d6+Fue de daño perforante, y si es del mismo o menor tamaño que el lanzador,
         atraes el objetivo hasta 10 ft en tu dirección<br>
@@ -448,9 +450,7 @@
       </p>
     </property-block>
 
-    <h3 style="font-size: 18px;">Ataques especiales</h3>
-    <p>Ninguno</p>
-
+    
   </stat-block>
 </body>
 
