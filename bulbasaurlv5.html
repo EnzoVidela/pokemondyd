@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>Charmander</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulbasaur</title>
   <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet"
     type="text/css" />
   <link href="//fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css" />
@@ -136,7 +137,7 @@
     <!--Imagen del pokemon-->
     <div id="content-wrap">
       <div class="divImagen">
-        <img class="pokeImagen" src="img/4.png" alt="" width="150px" height="150px">
+        <img class="pokeImagen" src="img/1.png" alt="" width="180px" height="180px">
       </div>
       <slot></slot>
     </div>
@@ -341,8 +342,8 @@
     }</script><stat-block>
     <creature-heading>
       <!-- NOMBRE Y TIPO DE CRIATURA -->
-      <h1>Charmander</h1>
-      <h2>Tipo fuego, pequeño</h2>
+      <h1>Bulbasaur</h1>
+      <h2>Tipo planta, pequeño</h2>
     </creature-heading>
 
 
@@ -350,11 +351,11 @@
     <top-stats>
       <property-line>
         <h4>Clase de armadura</h4>
-        <p>13</p>
+        <p>15</p>
       </property-line>
       <property-line>
         <h4>Puntos de golpe</h4>
-        <p>20</p>
+        <p>44</p>
       </property-line>
       <property-line>
         <h4>Dado de golpe</h4>
@@ -366,89 +367,90 @@
       </property-line>
       <property-line>
         <h4>Competencia</h4>
-        <p>+2</p>
+        <p>+3</p>
+      </property-line>
+      <property-line>
+        <h4>Nivel</h4>
+        <p>5</p>
       </property-line>
 
 
+
       <!-- PUNTUACIONES DE CARACTERISTICAS -->
-      <abilities-block data-fue="14" data-des="16" data-con="11" data-int="6" data-sab="11" data-cha="10">
+      <abilities-block data-fue="16" data-des="12" data-con="14" data-int="6"  data-sab="10" data-cha="10">
       </abilities-block>
 
       <!-- CARACTERISTICAS PASIVAS -->
       <property-line>
         <h4>Tiradas de salvacion</h4>
-        <p>Destreza</p>
+        <p>Fuerza</p>
       </property-line>
       <property-line>
         <h4>Recistencias</h4>
-        <p>Fuego, Hielo, Planta, Insecto ,Acero</p>
+        <p>Veneno, Agua, Planta</p>
       </property-line>
       <property-line>
         <h4>Debilidades</h4>
-        <p>Agua, Tierra, Roca</p>
+        <p>Fuego, Hielo, Volador, Psiquico</p>
       </property-line>
       <property-line>
         <h4>Condiciones inmunes</h4>
-        <p>Quemado</p>
+        <p>Envenenado</p>
       </property-line>
       <property-line>
         <h4>Sentidos</h4>
         <p>Vision en la oscuridad 60 ft, Percepcion pasiva 6</p>
       </property-line>
       <property-line>
-        <h4>Lenguajes</h4>
-        <p>Pokemon</p>
-      </property-line>
-      <property-line>
-        <h4>Nivel</h4>
-        <p>1</p>
+        <h4>Tirada de salvacion magica</h4>
+        <p>11</p>
       </property-line>
     </top-stats>
 
 
     <!-- HABILIDADES -->
     <property-block>
-      <h4>Poder solar.</h4>
-      <p>Charmander gana un +2 a las tiradas de ataque mientras reciba luz solar </p>
+      <h4>Clorofila.</h4>
+      <p>Si el dia es soleado bulbasaur duplica su velocidad </p>
     </property-block>
     <property-block>
-      <h4>Mar de llamas.</h4>
-      <p>Cuando la vida de charmander este por debajo del 25%, sus ataques de tipo fuego inflinjen 1d6 adicional.</p>
+      <h4>Espesura.</h4>
+      <p>Cuando la vida de bulbasaur este por debajo del 25%, sus ataques de tipo planta inflinjen 1d6 adicional.</p>
     </property-block>
 
 
     <!-- ACCIONES -->
     <h3>Acciones</h3>
-
     <property-block>
       <h4>Multiataque.</h4>
-      <p>Charmander puede realizar 2 ataques basicos o 1 ataque especial</p>
+      <p>Bulbasaur puede realizar 2 ataques basicos o 1 ataque especial</p>
     </property-block>
-
-
+    
     <!--Ataques basicos-->
     <h3 style="font-size: 18px;">Ataques basicos</h3>
     <property-block>
-      <h4>Arañazo </h4>
-      <p><i>Ataque cuerpo a cuerpo +5 a impactar </i><br>
+      <h4>Placaje </h4>
+      <p><i>Ataque cuerpo a cuerpo +6 a impactar </i><br> 
         <i>Alcance:</i> Un objetivo a 5ft<br>
-        <i>Hit:</i> 6 (1d6 + 3) daño cortante.
+        <i>Hit:</i> 6 (1d6 + 3) daño contundente.
       </p>
     </property-block>
-
 
     <!--Ataques especiales-->
     <h3 style="font-size: 18px;">Ataques especiales</h3>
     <property-block>
-      <h4 style="color: crimson;">Fire bolt</h4>
-      <p><i>Ataque rango +5 a impactar</i><br>
-        <i>Alcance:</i> Un objetivo a 150ft<br>
-        <i>Hit:</i> 1d10 daño de fuego.<br>
-        Lanza un proyectil de fuego a un objetivo, lo que provoca daño por fuego y puede encender objetos inflamables.<br>
-        El daño de este hechizo aumenta en 1d10 al alcanzar el nivel 5 (2d10), el nivel 11 (3d10) y el nivel 17 (4d10).
+      <h4 style="color: forestgreen;">Latigo sepa </h4>
+      <p><i>Ataque rango +6 a impactar</i><br>
+        <i>Alcance:</i> Un objetivo a 15ft<br>
+        <i>Hit:</i> 2d6 daño planta<br>
+        Creas un látigo cubierto de espinas, que arremete contra una criatura dentro de alcance
+        Si golpea, la criatura sufre 1d6+Fue de daño perforante, y si es del mismo o menor tamaño que el lanzador,
+        atraes el objetivo hasta 10 ft en tu dirección<br>
+        <i>El daño aumenta en 1d6 al alcanzar los niveles 5 (2d6), 11 (3d6) y 17 (4d6)</i>
       </p>
     </property-block>
 
+    
   </stat-block>
 </body>
 
