@@ -4,9 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<title>Pokemon dyd</title>
 	<style>
 		@import "https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap";
+		
 
 		body {
 			background: #f7ebcb;
@@ -98,15 +100,162 @@
 		}
 
 
-		.footer{
-    	display: table;
-		font-size: 150%;
-		color: #7a2b17;
-		text-transform: uppercase;
-    	text-align: center;
-    	margin-left: auto;
-    	margin-right: auto;
+		.footer {
+			display: table;
+			font-size: 150%;
+			color: #7a2b17;
+			text-transform: uppercase;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
+
+		.bgded {
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.overlay {
+			position: relative;
+			z-index: 1;
+		}
+
+		.overlay::after {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: "";
+			z-index: -1;
+		}
+
+		.wrapper {
+			display: block;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+			word-wrap: break-word;
+		}
+
+		/* Rows */
+		.row0, .row0 a{color:#474747;}
+		.row1{color:#474747; background-color:#EEEEEE;}
+		.row2{color:#474747; background-color:#EEEEEE;}
+		.row3{color:#474747; background-color:#FFFFFF;}
+		.row4{color:#CBCBCB;}
+		.row5{color:#676767; background-color:rgba(0,0,0,.5);}
+		.row5 a{color:inherit;}
+
+		/* Footer*/
+		footer {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+
+		#footer {
+			padding: 80px 0 50px;
+		}
+
+		#footer .heading {
+			margin-bottom: 50px;
+			font-size: 1.2rem;
+		}
+
+		#footer .linklist li {
+			display: block;
+			margin-bottom: 15px;
+			padding: 0 0 15px 0;
+			border-bottom: 1px solid;
+		}
+
+		#footer .linklist li:last-child {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+
+		#footer .linklist li::before,
+		#footer .linklist li::after {
+			display: table;
+			content: "";
+		}
+
+		#footer .linklist li,
+		#footer .linklist li::after {
+			clear: both;
+		}
+
+		
+
+		#footer .contact.linklist li,
+		#footer .contact.linklist li:last-child {
+			position: relative;
+			padding-left: 40px;
+		}
+
+		#footer .contact li * {
+			margin: 0;
+			padding: 0;
+			line-height: 1.6;
+		}
+
+		#footer .contact li i {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		#footer input,
+		#footer button {
+			border: 1px solid;
+		}
+
+		#footer input {
+			display: block;
+			width: 100%;
+			padding: 8px;
+		}
+
+		#footer button {padding: 8px 18px 10px;text-transform: uppercase;font-weight: 700;cursor: pointer;}
+		#footer .heading{color:#FFFFFF;}
+		#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.2);}
+		#footer input, #footer button{border-color:transparent;}
+		#footer input{color:#474747; background-color:#EEEEEE;}
+		#footer input:focus{border-color:#FF090F;}
+		#footer button{color:#FFFFFF; background-color:#FF090F;}
+		.one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+		.one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 3.06748466257669%; list-style:none;}
+		.first{margin-left:0; clear:left;}
+		.one_quarter{width:22.69938650306748%;}
+		.one_third{width:31.28834355828221%;}
+		.one_half, .two_quarter{width:48.46625766871166%;}
+		.two_third{width:65.6441717791411%;}
+		.three_quarter{width:74.23312883435584%;}
+
+		.social li:hover{
+			background-color:navajowhite;
+			cursor: pointer;
+		}
+		.social li{
+			display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;
+		}
+		
+		/* Copyright*/
+		#copyright{padding:20px 0;}
+		#copyright *{margin:0; padding:0;}
+		.fl_left, .fl_right{display:block; float:none;}
+		
+	
+
 	</style>
 </head>
 
@@ -119,7 +268,7 @@
 			<li><a href="#">Mecanicas de captura</a></li>
 			<li><a href="#">Mecanicas de combate</a></li>
 			<li><a href="#">Mecanicas de pokemones salvajes</a></li>
-			<li><a href="#">Mecanicas de subida de nivel y aprender poderes</a></li>
+			<li><a href="#">Mecanicas de subida de nivel y progresion</a></li>
 		</ul>
 		<div class="cointainer">
 
@@ -165,9 +314,78 @@
 
 	</main>
 
-
-
 	<div class="footer">Creado por Genzo</div>
+
+
+
+	<!-- ###################################FOOTER################################################# -->
+	<div class="bgded overlay">
+		<div class="wrapper row4">
+			<footer id="footer" class="hoc clear">
+				<!-- ################################################################################################ -->
+				<div class="one_quarter first">
+					<h6>Contactar al autor</h6>
+					<ul class="nospace btmspace-30 linklist contact">
+						<li><i class="fa fa-map-marker"></i></li>
+						<li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+						<li><i class="fa fa-envelope-o"></i> lamazmorradecachorro@gmail.com</li>
+					</ul>
+				</div>
+				<div class="one_quarter">
+					<h6>Redes sociales</h6>
+					<ul class="social">
+						<li>
+							<a href="https://www.youtube.com/@LaMazmorraDeCachorro">
+								<img src="img/icon-1.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/icon-2.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/icon-3.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="one_quarter">
+					<h6>Links de interes</h6>
+					<ul class="nospace linklist">
+						<li>
+							<a href="#">Quis blandit dignissim</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="one_quarter">
+					<h6>Contactenos</h6>
+					<p class="nospace btmspace-15">Envie su consulta</p>
+					<form method="post" action="#">
+						<fieldset>
+							<input class="btmspace-15" type="text" value="" placeholder="Nombre">
+							<input class="btmspace-15" type="text" value="" placeholder="Email">
+							<button type="submit" value="submit">Enviar</button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- ################################################################################################ -->
+			</footer>
+		</div>
+
+
+	<div class="wrapper row5">
+    	<div id="copyright" class="hoc clear"> 
+      	<!-- ################################################################################################ -->
+      	<p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+      	<p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      	<!-- ################################################################################################ -->
+    	</div>
+  	</div>
+
+
 
 </body>
 
