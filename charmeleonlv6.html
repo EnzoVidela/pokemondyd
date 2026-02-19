@@ -346,7 +346,7 @@
 
     <!-- NOMBRE Y TIPO DE CRIATURA -->
     <creature-heading>
-      <h1>Chrmeleon</h1>
+      <h1>Charmeleon</h1>
       <h2>Tipo fuego,Mediano</h2>
     </creature-heading>
 
@@ -358,7 +358,7 @@
       </property-line>
       <property-line>
         <h4>Puntos de golpe</h4>
-        <p>60</p>
+        <p>48</p>
       </property-line>
       <property-line>
         <h4>Dado de golpe</h4>
@@ -378,51 +378,51 @@
       </property-line>
 
       <!-- PUNTUACIONES DE CARACTERISTICAS -->
-      <abilities-block data-fue="17" data-des="14" data-con="15" data-int="7" data-sab="11" data-cha="11">
+      <abilities-block data-fue="15" data-des="19" data-con="12" data-int="7" data-sab="12" data-cha="12">
       </abilities-block>
 
       <!-- CARACTERISTICAS PASIVAS -->
-      <property-line>
+     <property-line>
         <h4>Tiradas de salvacion</h4>
-        <p>Fuerza</p>
-      </property-line>
-      <property-line>
-        <h4>Habilidades</h4>
-        <p>Atletismo, Percepcion</p>
+        <p>Destreza</p>
       </property-line>
       <property-line>
         <h4>Recistencias</h4>
-        <p>Veneno, Agua, Planta</p>
+        <p>Fuego, Hielo, Planta, Insecto ,Acero</p>
       </property-line>
       <property-line>
         <h4>Debilidades</h4>
-        <p>Fuego, Hielo, Volador, Psiquico</p>
+        <p>Agua, Tierra, Roca</p>
       </property-line>
       <property-line>
         <h4>Condiciones inmunes</h4>
-        <p>Envenenado</p>
+        <p>Quemado</p>
       </property-line>
       <property-line>
         <h4>Sentidos</h4>
         <p>Vision en la oscuridad 60 ft, Percepcion pasiva 6</p>
       </property-line>
       <property-line>
-        <h4>Languages</h4>
-        <p>Pokemon</p>
+        <h4>CD de salvacion magica (Destreza)</h4>
+        <p>15</p>
       </property-line>
+      <property-line>
+        <h4>Nivel</h4>
+        <p>6</p>
+      </property-line>
+    </top-stats>
       
       
     </top-stats>
 
     <!-- HABILIDADES -->
     <property-block>
-      <h4>Clorofila.</h4>
-      <p>Si el dia es soleado bulbasaur duplica su velocidad </p>
+      <h4>Poder solar.</h4>
+      <p>Charmeleon gana un +2 a las tiradas de ataque mientras reciba luz solar </p>
     </property-block>
-
     <property-block>
-      <h4>Espesura.</h4>
-      <p>Cuando la vida de bulbasaur este por debajo del 25%, sus ataques de tipo planta inflinjen 1d6 adicional.</p>
+      <h4>Mar de llamas.</h4>
+      <p>Cuando la vida de charmeleon este por debajo del 25%, sus ataques de tipo fuego inflinjen 1d6 adicional.</p>
     </property-block>
 
     
@@ -430,57 +430,61 @@
 
     <h3>Acciones</h3>
     <property-block>
-      <h4>Multiataque</h4>
-      <p>Bulbasaur puede realizar 2 ataques basicos o 1 ataque especial</p>
-      <br>
-      <br>
-      <br>
+      <h4>Multiataque.</h4>
+      <p>Charmeleon puede realizar 2 ataques basicos o 1 ataque especial</p>
     </property-block>
+
 
     <!--Ataques basicos-->
     <h3 style="font-size: 18px;">Ataques basicos</h3>
     <property-block>
-      <h4>Placaje </h4>
-      <p><i>Ataque cuerpo a cuerpo +6 a impactar </i><br> 
+      <h4>Arañazo</h4>
+      <p><i>Ataque cuerpo a cuerpo +7 a impactar </i><br>
         <i>Alcance:</i> Un objetivo a 5ft<br>
-        <i>Hit:</i> 6 (1d6 + 3) daño contundente.
+        <i>Hit:</i> 6 (1d6 + 4) daño cortante.
       </p>
     </property-block>
- <property-block>
-      <h4>Gruñido </h4>
-      <p><i>Ataque rango Salvacion sabiduria</i><br> 
-        <i>Alcance:</i> Un objetivo a 60ft<br>
-        <i>Hit:</i> Seleccionas una criatura dentro de alcance y debe realizar una tirada de salvación de Sabiduría
-          Si falla, añade -1 a cualquier ataque que realice. Al final de su turno el objetivo puede volver a realizar la tirada de salvacion
-          Este modificador se puede acumular si falla varias tiradas de salvación de Gruñido, hasta un máximo de -5.
-      </p>
-    </property-block>
+
+
+
 
     <!--Ataques especiales-->
     <h3 style="font-size: 18px;">Ataques especiales</h3>
-    <property-line>
-      <h4 style="color: blueviolet;">Polvo Venenoso</h4>
-      <i>Ataque rango Salvacion constitucion</i><br> 
-      <i>Alcance:</i> Un objetivo a 10ft<br>
-      <p>Liberas un grupo de esporas venenosas que estallan en el aire sobre un objetivo dentro de alcance.
-        La criatura debe superar una tirada de Constitución o sufrir 1d12 de daño por veneno<br>
-        <i>El daño aumenta en 1d12 al alcanzar el nivel 5 (2d12), el nivel 11 (3d12) y el nivel 17 (4d12)</i></p>
-    </property-line>
-
-    <property-line>
-      <h4 style="color:forestgreen;">Polvo Sobnifero</h4>
-      <i>Ataque rango Salvacion constitucion</i><br>
-      <i>Alcance:</i> Un objetivo a 40ft<br>
-      <p>Liberas un grupo de esporas contra una criatura a 40ft, intentando adormecerla.
-        El objetivo debe realizar una tirada de salvación de constitucion o quedará dormido.<br>
-    </property-line>
-    
-    <!-- IMAGEN-->
     <property-block>
-      
+      <h4 style="color:crimson;">Fire bolt</h4>
+      <p><i>Ataque rango +7 a impactar</i><br>
+        <i><b>Alcance:</b></i> Un objetivo a 150ft<br>
+        <i><b>Hit:</b></i> 2d10 daño de fuego<br>
+        <i><b>Usos:</b></i> *<br>
+        Lanza un proyectil de fuego a un objetivo, lo que provoca daño por fuego y puede encender objetos inflamables.<br>
+        <i>El daño de este hechizo aumenta en 1d10 al alcanzar el nivel 5 (2d10), el nivel 11 (3d10) y el nivel 17 (4d10).</i>
+      </p>
     </property-block>
 
-    
+
+    <property-block>
+      <h4 style="color:crimson;">Giro fuego</h4>
+      <p><i>Ataque rango +7 a impactar</i><br>
+        <i><b>Alcance:</b></i> Un objetivo a 40ft<br>
+        <i><b>Duracion:</b></i> 3  Turnos Requiere concentracion <br>
+        <i><b>Hit:</b></i> 2d8 daño de fuego<br>
+        <i><b>Usos:</b></i> 4 por descanzo largo<br>
+        El objetivo queda quemado, durante los proximos 3 turnos<br>
+        Al final de su turno el objetivo puede tirar una TS de destreza, si la supera deja de estar quemado de lo contrario recibe 1d8 de daño de fuego<br>
+        <i>El daño de este hechizo aumenta en 1d8 al alcanzar el nivel 5 (2d8), al nivel 11 (3d8) y al nivel 17 (4d8).</i>
+      </p>
+    </property-block>
+
+    <property-block>
+      <h4 style="color: rgb(147, 137, 47);">Destello</h4>
+      <p><i>Ataque rango +7 a impactar </i><br>
+        <i><b>Alcance:</b></i> Un objetivo a 60ft<br>
+        <i><b>Usos:</b></i> 4 por descanzo largo<br>
+        <i><b>Hit:</b></i> El objetivo gana desventaja en sus ataques cuerpo a cuerpo por el resto de la ronda.
+        Si se utiliza en un area oscura, genera luz artificial en un area de 60ft
+      </p>
+    </property-block>
+
 
 
   </stat-block>
