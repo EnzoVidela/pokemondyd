@@ -358,7 +358,7 @@
       </property-line>
       <property-line>
         <h4>Puntos de golpe</h4>
-        <p>60</p>
+        <p>56</p>
       </property-line>
       <property-line>
         <h4>Dado de golpe</h4>
@@ -378,17 +378,13 @@
       </property-line>
 
       <!-- PUNTUACIONES DE CARACTERISTICAS -->
-      <abilities-block data-fue="17" data-des="14" data-con="15" data-int="7" data-sab="11" data-cha="11">
+      <abilities-block data-fue="17" data-des="13" data-con="15" data-int="7" data-sab="11" data-cha="11">
       </abilities-block>
 
       <!-- CARACTERISTICAS PASIVAS -->
       <property-line>
         <h4>Tiradas de salvacion</h4>
         <p>Fuerza</p>
-      </property-line>
-      <property-line>
-        <h4>Habilidades</h4>
-        <p>Atletismo, Percepcion</p>
       </property-line>
       <property-line>
         <h4>Recistencias</h4>
@@ -407,10 +403,9 @@
         <p>Vision en la oscuridad 60 ft, Percepcion pasiva 6</p>
       </property-line>
       <property-line>
-        <h4>Languages</h4>
-        <p>Pokemon</p>
+        <h4>Tirada de salvacion magica (Fue)</h4>
+        <p>14</p>
       </property-line>
-      
       
     </top-stats>
 
@@ -432,49 +427,60 @@
     <property-block>
       <h4>Multiataque</h4>
       <p>Bulbasaur puede realizar 2 ataques basicos o 1 ataque especial</p>
-      <br>
-      <br>
-      <br>
     </property-block>
 
     <!--Ataques basicos-->
     <h3 style="font-size: 18px;">Ataques basicos</h3>
     <property-block>
-      <h4>Placaje </h4>
+      <h4 style="color: darkgray;">Placaje </h4>
       <p><i>Ataque cuerpo a cuerpo +6 a impactar </i><br> 
         <i>Alcance:</i> Un objetivo a 5ft<br>
         <i>Hit:</i> 6 (1d6 + 3) daño contundente.
       </p>
     </property-block>
- <property-block>
-      <h4>Gruñido </h4>
-      <p><i>Ataque rango Salvacion sabiduria</i><br> 
-        <i>Alcance:</i> Un objetivo a 60ft<br>
-        <i>Hit:</i> Seleccionas una criatura dentro de alcance y debe realizar una tirada de salvación de Sabiduría
-          Si falla, añade -1 a cualquier ataque que realice. Al final de su turno el objetivo puede volver a realizar la tirada de salvacion
-          Este modificador se puede acumular si falla varias tiradas de salvación de Gruñido, hasta un máximo de -5.
+
+    <property-block>
+      <h4 style="color: darkgray;">Arañazo</h4>
+      <p><i>Ataque cuerpo a cuerpo +6 a impactar </i><br>
+        <i><b>Alcance:</b></i> Un objetivo a 5ft<br>
+        <i><b>Hit:</b></i> 6 (1d6 + 3) daño cortante.
       </p>
     </property-block>
 
     <!--Ataques especiales-->
     <h3 style="font-size: 18px;">Ataques especiales</h3>
-    <property-line>
-      <h4 style="color: blueviolet;">Polvo Venenoso</h4>
-      <i>Ataque rango Salvacion constitucion</i><br> 
-      <i>Alcance:</i> Un objetivo a 10ft<br>
-      <p>Liberas un grupo de esporas venenosas que estallan en el aire sobre un objetivo dentro de alcance.
-        La criatura debe superar una tirada de Constitución o sufrir 1d12 de daño por veneno<br>
-        <i>El daño aumenta en 1d12 al alcanzar el nivel 5 (2d12), el nivel 11 (3d12) y el nivel 17 (4d12)</i></p>
-    </property-line>
+    <property-block>
+      <h4 style="color: forestgreen;">Latigo sepa </h4>
+      <p><i>Ataque rango +6 a impactar</i><br>
+        <i><b>Alcance:</b></i> Un objetivo a 15ft<br>
+        <i><b>Duracion:</b></i> Instantaneo <br>
+        <i><b>Hit:</b></i> 2d6 daño planta<br>
+        <i><b>Usos:</b></i> *<br>
+        Creas un látigo cubierto de espinas, que arremete contra una criatura dentro de alcance
+        Si golpea, la criatura sufre 1d6 de daño perforante, y si es del mismo o menor tamaño que el lanzador,
+        atraes el objetivo hasta 10 ft en tu dirección<br>
+        <i>El daño aumenta en 1d6 al alcanzar los niveles 5 (2d6), 11 (3d6) y 17 (4d6)</i>
+      </p>
+    </property-block>
 
-    <property-line>
-      <h4 style="color:forestgreen;">Polvo Sobnifero</h4>
-      <i>Ataque rango Salvacion constitucion</i><br>
-      <i>Alcance:</i> Un objetivo a 40ft<br>
-      <p>Liberas un grupo de esporas contra una criatura a 40ft, intentando adormecerla.
-        El objetivo debe realizar una tirada de salvación de constitucion o quedará dormido.<br>
-    </property-line>
-    
+    <property-block>
+      <h4 style="color:forestgreen;">Rayo solar</h4>
+      <p><i>Tirada de salvacion de constitucion</i><br>
+        <i><b>Alcance:</b></i> Una linea recta de 60ft largo y 5ft ancho<br>
+        <i><b>Duracion:</b></i> 2 Turnos Requiere concentracion <br>
+        <i><b>Hit:</b></i> 6d8 daño radiante<br>
+        <i><b>Usos:</b></i> 1 por descanzo largo<br>
+        Acumulas energia solar durante un turno para luego disparar un rayo en el siguiente turno.
+        El turno que acumulas energia no puedes moverte ni realizar otra accion.
+        Disparas un rayo de luz en una linea recta de 60 pies de largo, cada criatura debe superar una Ts de constitucion. 
+        Si fallan reciben 6d8 de daño radiante y quedan cegados por un turno, si superan la TS reciben la mitad del daño y no quedan cegados
+        <br><i>No muertos tienen desventaja en la tirada de salvacion</i>
+      </p>
+    </property-block>
+
+
+
+
     <!-- IMAGEN-->
     <property-block>
       
